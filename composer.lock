@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "abcc76dc2cce75d0c716696bd84da568",
+    "content-hash": "d4d5e373ee0d74d288bd1196e8b420fe",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -799,6 +799,59 @@
                 "php"
             ],
             "time": "2017-03-05T18:23:57+00:00"
+        },
+        {
+            "name": "nwidart/laravel-modules",
+            "version": "1.19.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nWidart/laravel-modules.git",
+                "reference": "694640a499452f1bff8f424b250260343d81acba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/694640a499452f1bff8f424b250260343d81acba",
+                "reference": "694640a499452f1bff8f424b250260343d81acba",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.1.*|5.2.*|5.3.*|5.4.*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.11",
+                "mockery/mockery": "~0.9",
+                "orchestra/testbench": "^3.1|^3.2|^3.3|^3.4",
+                "phpro/grumphp": "^0.9.1",
+                "phpunit/phpunit": "~5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nwidart\\Modules\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "n.widart@gmail.com",
+                    "homepage": "https://nicolaswidart.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Module management",
+            "keywords": [
+                "laravel",
+                "module",
+                "modules",
+                "nwidart",
+                "rad"
+            ],
+            "time": "2017-03-16T10:56:06+00:00"
         },
         {
             "name": "paragonie/random_compat",
