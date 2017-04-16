@@ -1,4 +1,9 @@
 language: php
 php:
 - 5.6
+before_script:
+  - cp .env.travis .env
+  - mysql -e 'create database test;'
+  - composer self-update
+  - composer install --no-interaction
 script: phpunit --configuration phpunit.xml
