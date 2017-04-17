@@ -4,62 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd522845477c66053fdf15123c1fa4b9",
+    "content-hash": "abcc76dc2cce75d0c716696bd84da568",
     "packages": [
-        {
-            "name": "caffeinated/modules",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/caffeinated/modules.git",
-                "reference": "e58a340cc2dcc93f35ab73e1a8a0f23a079eaa3e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/caffeinated/modules/zipball/e58a340cc2dcc93f35ab73e1a8a0f23a079eaa3e",
-                "reference": "e58a340cc2dcc93f35ab73e1a8a0f23a079eaa3e",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/config": "^5.3",
-                "illuminate/database": "^5.3",
-                "illuminate/filesystem": "^5.3",
-                "illuminate/routing": "^5.3",
-                "illuminate/support": "^5.3",
-                "php": ">=5.6.4"
-            },
-            "suggest": {
-                "wikimedia/composer-merge-plugin": "Allows the ability to create and merge composer.json files for your individual modules for module-specific dependency management."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Caffeinated\\Modules\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Shea Lewis",
-                    "email": "shea.lewis89@gmail.com"
-                }
-            ],
-            "description": "Laravel 5 Modules",
-            "keywords": [
-                "caffeinated",
-                "laravel",
-                "modules"
-            ],
-            "time": "2017-03-28T15:54:24+00:00"
-        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -360,16 +306,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.4.18",
+            "version": "v5.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d15ded55b5e690199393ea93a57edcbae20d1ffc"
+                "reference": "02444b7450350db17a7607c8a52f7268ebdb0dad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d15ded55b5e690199393ea93a57edcbae20d1ffc",
-                "reference": "d15ded55b5e690199393ea93a57edcbae20d1ffc",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/02444b7450350db17a7607c8a52f7268ebdb0dad",
+                "reference": "02444b7450350db17a7607c8a52f7268ebdb0dad",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +431,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-04-10T19:27:41+00:00"
+            "time": "2017-04-16T13:33:34+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -853,59 +799,6 @@
                 "php"
             ],
             "time": "2017-03-05T18:23:57+00:00"
-        },
-        {
-            "name": "nwidart/laravel-modules",
-            "version": "1.19.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nWidart/laravel-modules.git",
-                "reference": "694640a499452f1bff8f424b250260343d81acba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/694640a499452f1bff8f424b250260343d81acba",
-                "reference": "694640a499452f1bff8f424b250260343d81acba",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "5.1.*|5.2.*|5.3.*|5.4.*",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^1.11",
-                "mockery/mockery": "~0.9",
-                "orchestra/testbench": "^3.1|^3.2|^3.3|^3.4",
-                "phpro/grumphp": "^0.9.1",
-                "phpunit/phpunit": "~5.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Nwidart\\Modules\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Widart",
-                    "email": "n.widart@gmail.com",
-                    "homepage": "https://nicolaswidart.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Laravel Module management",
-            "keywords": [
-                "laravel",
-                "module",
-                "modules",
-                "nwidart",
-                "rad"
-            ],
-            "time": "2017-03-16T10:56:06+00:00"
         },
         {
             "name": "paragonie/random_compat",
