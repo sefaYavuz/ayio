@@ -167,7 +167,7 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
-        Nwidart\Modules\LaravelModulesServiceProvider::class,
+        Caffeinated\Modules\ModulesServiceProvider::class,
         GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
 
         /*
@@ -213,7 +213,7 @@ return [
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
-        'Module' => Nwidart\Modules\Facades\Module::class,
+        'Module' => Caffeinated\Modules\Facades\Module::class,
         'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
