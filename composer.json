@@ -22,7 +22,8 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "Ayio\\Ui\\": "packages/ayio/ui/src"
+            "Ayio\\Ui\\": "packages/ayio/ui/src",
+            "Ayio\\Home\\": "packages/ayio/home/src"
         }
     },
     "autoload-dev": {

@@ -168,6 +168,7 @@ return [
          */
         Laravel\Tinker\TinkerServiceProvider::class,
         Ayio\Ui\UiServiceProvider::class,
+        Ayio\Home\HomeServiceProvider::class,
         GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
 
         /*
