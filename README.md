@@ -1,4 +1,4 @@
-##AYio
+## AYio
 
 AYio is a modular system built upon the Laravel Framework to make web-applications.
 
