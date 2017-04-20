@@ -1,4 +1,6 @@
-## AYio
+<h1 align="center">AYio</h1>
+<p align="center"><a href="https://travis-ci.org/sefaYavuz/ayio"><img src="https://travis-ci.org/sefaYavuz/ayio.svg" alt="Build Status"></a>
+</p>
 
 AYio is a modular system built upon the Laravel Framework to make web-applications.
 
