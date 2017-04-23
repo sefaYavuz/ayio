@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 class HomeServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap the application services.
+     * Perform post-registration booting of services.
      *
      * @return void
      */
@@ -18,7 +18,7 @@ class HomeServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the application services.
+     * Register any package services.
      *
      * @return void
      */

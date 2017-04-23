@@ -1,11 +1,28 @@
 {
-    "name": "ayio/home",
-    "description": "This module will hold all the logic for the user interface.",
-    "type": "module",
+    "name": "Ayio/Home",
+    "type": "library",
+    "description": "This package will provide a home page",
+    "keywords": [
+        "Ayio",
+        "Home"
+    ],
+    "homepage": "https://github.com/Ayio/Home",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Sefa Yavuz"
+            "name": "Sefa Yavuz",
+            "email": "seff61@gmail.com",
+            "homepage": "https://github.com/sefaYavuz",
+            "role": "Developer"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.6|~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ayio\\Home\\": "src"
+        }
+    }
 }
