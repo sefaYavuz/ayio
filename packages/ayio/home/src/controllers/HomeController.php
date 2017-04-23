@@ -2,18 +2,20 @@
 
 namespace Ayio\Home\Controllers;
 
-use Ayio\Ui\Models\Menu;
-use Illuminate\Http\Request as Controller;
+use stdClass;
+use Ayio\Ui\Controllers\BaseController;
+use Ayio\Ui\Workers\MenuWorker;
 
-class HomeController extends Controller
+class HomeController extends BaseController
 {
     public function index() {
-        // $menu = new Menu();
-        // $menu->title = 'Home';
-        // $menu->slug = 'home';
-        // $menu->url = '/home';
-        // $menu->order = 100;
-        // $menu->save();
+        $menu = new stdClass();
+        $menu->title = 'Home';
+        $menu->slug = 'home';
+        $menu->url = '/home';
+        $menu->order = 100;
+
+        dispatch(new MenuWorker($menu));
 
         return view('home::home');
     }
