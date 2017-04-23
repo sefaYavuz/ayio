@@ -32,9 +32,11 @@ class MenuWorker implements ShouldQueue
      */
     public function handle()
     {
-        $menu = new Menu();
-        $menu->title = $this->menu->title;
-        $menu->url = $this->menu->url;
-        $menu->save();
+        $menu = Menu::firstOrCreate([
+            'title' => $this->menu->title,
+            'slug' => $this->menu->slug,
+            'url' => $this->menu->url,
+            'order' => $this->menu->order
+        ]);
     }
 }

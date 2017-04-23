@@ -167,8 +167,6 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
-        Ayio\Ui\UiServiceProvider::class,
-        Ayio\Home\HomeServiceProvider::class,
         GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
 
         /*
@@ -179,6 +177,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        Ayio\Ui\UiServiceProvider::class,
+        Ayio\Home\HomeServiceProvider::class,
+
+        JeroenG\Packager\PackagerServiceProvider::class,
 
     ],
 

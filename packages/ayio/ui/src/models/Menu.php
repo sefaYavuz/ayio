@@ -12,4 +12,6 @@ class Menu extends Model
      * @var string
      */
     protected $table = 'menu';
+
+    protected $guarded = array();
 }
