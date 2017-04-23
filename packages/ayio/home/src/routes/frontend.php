@@ -10,3 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', 'Ayio\Home\Controllers\HomeController@index');
+Route::get('/home', 'Ayio\Home\Controllers\HomeController@index');

@@ -10,3 +10,5 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/admin/pages/home', 'Ayio\Home\Controllers\HomeController@index');
