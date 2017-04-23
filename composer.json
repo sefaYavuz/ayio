@@ -24,6 +24,7 @@
             "database"
         ],
         "psr-4": {
+            "Ayio\\Auth\\": "packages/ayio/auth/src",
             "Ayio\\Home\\": "packages/ayio/home/src",
             "Ayio\\Ui\\": "packages/ayio/ui/src",
             "App\\": "app/"
@@ -31,6 +32,7 @@
     },
     "autoload-dev": {
         "psr-4": {
+            "Ayio\\Auth\\": "packages/ayio/auth/src",
             "Ayio\\Home\\": "packages/ayio/home/src",
             "Ayio\\Ui\\": "packages/ayio/ui/src",
             "Tests\\": "tests/"
