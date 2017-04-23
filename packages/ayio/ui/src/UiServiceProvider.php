@@ -2,8 +2,6 @@
 
 namespace Ayio\Ui;
 
-use Ayio\Ui\Models\Menu;
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class UiServiceProvider extends ServiceProvider
@@ -21,11 +19,6 @@ class UiServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/assets' => public_path('assets/ayio/ui'),
         ], 'ui');
-
-        $menu = Menu::where('deleted', 0)
-        ->orderBy('order')
-        ->get();
-        View::share('menu', $menu);
     }
 
     /**
