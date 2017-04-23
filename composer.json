@@ -24,12 +24,13 @@
             "database"
         ],
         "psr-4": {
-            "App\\": "app/",
-            "Ayio\\Ui\\": "packages/ayio/ui/src"
+            "Ayio\\Ui\\": "packages/ayio/ui/src",
+            "App\\": "app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
+            "Ayio\\Ui\\": "packages/ayio/ui/src",
             "Tests\\": "tests/"
         }
     },

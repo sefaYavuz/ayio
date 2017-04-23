@@ -7,13 +7,12 @@ use Illuminate\Support\ServiceProvider;
 class UiServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap the application services.
+     * Perform post-registration booting of services.
      *
      * @return void
      */
     public function boot()
     {
-
         $this->loadMigrationsFrom(__DIR__ . '/migrations');
         $this->loadViewsFrom(__DIR__ . '/views', 'ui');
         $this->publishes([
@@ -22,7 +21,7 @@ class UiServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register the application services.
+     * Register any package services.
      *
      * @return void
      */
