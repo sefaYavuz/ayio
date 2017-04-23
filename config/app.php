@@ -178,6 +178,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Ayio\Ui\UiServiceProvider::class,
+
+        JeroenG\Packager\PackagerServiceProvider::class,
+
     ],
 
     /*

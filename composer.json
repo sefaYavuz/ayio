@@ -7,8 +7,11 @@
     "require": {
         "php": ">=5.6.4",
         "graham-campbell/exceptions": "^9.3",
+        "jeroen-g/laravel-packager": "^1.5",
         "laravel/framework": "5.4.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "predis/predis": "^1.0",
+        "guzzlehttp/guzzle": "4.0 as 6.0"
     },
     "require-dev": {
         "filp/whoops": "^2.1",
@@ -21,11 +24,13 @@
             "database"
         ],
         "psr-4": {
+            "Ayio\\Ui\\": "packages/ayio/ui/src",
             "App\\": "app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
+            "Ayio\\Ui\\": "packages/ayio/ui/src",
             "Tests\\": "tests/"
         }
     },
@@ -42,7 +47,8 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
+            "php artisan optimize",
+            "php artisan vendor:publish --force"
         ]
     },
     "config": {
