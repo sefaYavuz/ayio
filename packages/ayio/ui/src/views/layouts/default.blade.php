@@ -9,9 +9,11 @@
             @include('ui::includes.header')
         </header>
 
-        <div class="container">
-            @yield('content')
-        </div>
+        <section class="section">
+            <div class="container content">
+                @yield('content')
+            </div>
+        </section>
 
         <footer class="row">
             @include('ui::includes.footer')
