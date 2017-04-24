@@ -15,6 +15,10 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__ . '/migrations');
         $this->loadRoutesFrom(__DIR__ . '/routes/frontend.php');
+        $this->loadViewsFrom(__DIR__ . '/views', 'auth');
+        $this->publishes([
+            __DIR__ . '/assets' => public_path('assets/ayio/auth'),
+        ], 'auth');
     }
 
     /**
