@@ -8,6 +8,7 @@ use Ayio\Ui\Workers\MenuWorker;
 
 class HomeController extends BaseController
 {
+
     public function index() {
         $menu = new stdClass();
         $menu->title = 'Home';

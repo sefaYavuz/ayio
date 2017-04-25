@@ -14,14 +14,6 @@
       @foreach ($menu as $menuItem)
         <a href="{{ url($menuItem->url) }}" class="nav-item is-tab {{ Request::is($menuItem->slug) ? 'is-active' : '' }}">{{ $menuItem->title }}</a>
       @endforeach
-      <span class="nav-item">
-        <a class="button">
-          Log in
-        </a>
-        <a class="button is-info">
-          Sign up
-        </a>
-      </span>
     </div>
   </div>
 </nav>

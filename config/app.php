@@ -178,10 +178,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Ayio\Admin\AdminServiceProvider::class,
         Ayio\Auth\AuthServiceProvider::class,
-
-        Ayio\Ui\UiServiceProvider::class,
         Ayio\Home\HomeServiceProvider::class,
+        Ayio\Ui\UiServiceProvider::class,
 
         JeroenG\Packager\PackagerServiceProvider::class,
 
