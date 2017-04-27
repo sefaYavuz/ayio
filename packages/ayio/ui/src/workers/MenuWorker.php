@@ -13,16 +13,16 @@ class MenuWorker implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    protected $menu;
+    protected $menus;
 
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct($menu)
+    public function __construct(array $menus)
     {
-        $this->menu = $menu;
+        $this->menus = $menus;
     }
 
     /**
@@ -32,11 +32,8 @@ class MenuWorker implements ShouldQueue
      */
     public function handle()
     {
-        $menu = Menu::firstOrCreate([
-            'title' => $this->menu->title,
-            'slug' => $this->menu->slug,
-            'url' => $this->menu->url,
-            'order' => $this->menu->order
-        ]);
+        foreach($this->menus as $menu) {
+            Menu::firstOrCreate($menu);
+        }
     }
 }

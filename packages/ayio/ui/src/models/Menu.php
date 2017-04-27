@@ -14,4 +14,8 @@ class Menu extends Model
     protected $table = 'menu';
 
     protected $guarded = array();
+
+    public function getAttributes() {
+        return $this->attributes;
+    }
 }
