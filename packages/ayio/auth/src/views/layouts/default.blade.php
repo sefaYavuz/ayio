@@ -7,7 +7,7 @@
         <div class="login-wrapper columns">
             @include('auth::includes.header')
 
-            <div class="column is-4">
+            <div class="column is-8">
                 @yield('content')
             </div>
         </div>

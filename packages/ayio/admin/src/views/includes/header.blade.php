@@ -1,7 +1,6 @@
-<nav class="nav has-shadow" id="top">
-  <div class="container">
+<nav class="nav has-shadow is-primary hero" id="top">
     <div class="nav-left">
-      <a class="nav-item" href"/admin">
+      <a class="nav-item" href="/admin">
         LOGO
       </a>
     </div>
@@ -11,18 +10,11 @@
       <span></span>
     </span>
     <div class="nav-right nav-menu is-hidden-tablet">
-      <a href="#" class="nav-item is-active">
+      <a href="/admin" class="nav-item is-active">
         Dashboard
       </a>
-      <a href="#" class="nav-item">
-        Activity
-      </a>
-      <a href="#" class="nav-item">
-        Timeline
-      </a>
-      <a href="#" class="nav-item">
-        Folders
+      <a href="/logout" class="nav-item">
+        Logout
       </a>
     </div>
-  </div>
 </nav>

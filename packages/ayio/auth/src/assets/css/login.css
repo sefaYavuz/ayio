@@ -7,21 +7,13 @@ html,body {
 
 .email-input,
 .password-input {
-  border-radius: 40px;
-  font-size: 20px;
   padding-left: 15px;
   color: #95A5A6;
-}
-
-.icon.user,
-.icon.password {
-  margin: 5px 10px 0 0;
 }
 
 .avatar img {
   border-radius: 100px;
   padding: 5px;
-  border: 1px solid #dbdbdb;
 }
 
 .forgot-password a {
@@ -32,11 +24,6 @@ html,body {
 
 .login {
   padding-top: 20px;
-}
-
-.login button {
-  border-radius: 40px;
-  font-weight: bold;
 }
 
 .hero-body .container {
@@ -50,17 +37,4 @@ html,body {
 .login-wrapper {
   margin: -0.75rem;
   overflow-y: hidden;
-}
-
-.hero-banner .hero {
-  background: url('http://www.gstatic.com/prettyearth/assets/full/1032.jpg');
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: screen;
-}
-
-.hero-banner .title {
-  display: inline-block;
-  background-color: rgba(0,0,0, 0.6);
-  padding: 5px;
 }
