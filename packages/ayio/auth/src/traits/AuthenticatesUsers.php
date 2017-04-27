@@ -159,7 +159,7 @@ trait AuthenticatesUsers
 
         $request->session()->regenerate();
 
-        return redirect('/login');
+        return redirect('/admin/login');
     }
 
     /**
