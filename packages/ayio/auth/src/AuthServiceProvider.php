@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadMigrationsFrom(__DIR__ . '/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
         $this->loadRoutesFrom(__DIR__ . '/routes/frontend.php');
         $this->loadViewsFrom(__DIR__ . '/views', 'auth');
         $this->publishes([
