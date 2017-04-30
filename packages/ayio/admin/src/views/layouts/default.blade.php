@@ -34,6 +34,22 @@
                 @yield('content')
             </div>
         </div>
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title"></p>
+                    <button class="delete"></button>
+                </header>
+                <section class="modal-card-body">
+
+                </section>
+                <footer class="modal-card-foot">
+                    <a class="button is-success" href="" data-method="">Ja</a>
+                    <a class="button">Nee, annuleren</a>
+                </footer>
+            </div>
+        </div>
         @include('admin::includes.footer')
     </body>
 </html>

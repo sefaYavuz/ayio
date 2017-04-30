@@ -1,6 +1,12 @@
 body {
   height: 100%;
 }
+
+.turbolinks-progress-bar {
+  height: 5px;
+  background-color: #fff;
+}
+
 .button.is-success {
   background-color: #2EB398;
 }
