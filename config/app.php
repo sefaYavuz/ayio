@@ -181,7 +181,6 @@ return [
         Ayio\Pages\PagesServiceProvider::class,
         Ayio\Admin\AdminServiceProvider::class,
         Ayio\Auth\AuthServiceProvider::class,
-        Ayio\Home\HomeServiceProvider::class,
         Ayio\Ui\UiServiceProvider::class,
 
         JeroenG\Packager\PackagerServiceProvider::class,

@@ -27,7 +27,6 @@
             "Ayio\\Pages\\": "packages/ayio/pages/src",
             "Ayio\\Admin\\": "packages/ayio/admin/src",
             "Ayio\\Auth\\": "packages/ayio/auth/src",
-            "Ayio\\Home\\": "packages/ayio/home/src",
             "Ayio\\Ui\\": "packages/ayio/ui/src",
             "App\\": "app/"
         }
@@ -38,7 +37,6 @@
             "Ayio\\Pages\\": "packages/ayio/pages/src",
             "Ayio\\Admin\\": "packages/ayio/admin/src",
             "Ayio\\Auth\\": "packages/ayio/auth/src",
-            "Ayio\\Home\\": "packages/ayio/home/src",
             "Ayio\\Ui\\": "packages/ayio/ui/src",
             "Tests\\": "tests/"
         }
