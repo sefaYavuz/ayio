@@ -1,0 +1,40 @@
+html,body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.email-input,
+.password-input {
+  padding-left: 15px;
+  color: #95A5A6;
+}
+
+.avatar img {
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.forgot-password a {
+  color: #95A5A6;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.login {
+  padding-top: 20px;
+}
+
+.hero-body .container {
+  margin-top: -100px;
+}
+
+.hero.is-dark .section {
+  background-color: transparent;
+}
+
+.login-wrapper {
+  margin: -0.75rem;
+  overflow-y: hidden;
+}

@@ -167,7 +167,6 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
-        GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -178,8 +177,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Ayio\Ui\UiServiceProvider::class,
+        Ayio\Errors\ErrorsServiceProvider::class,
+        Ayio\Pages\PagesServiceProvider::class,
+        Ayio\Admin\AdminServiceProvider::class,
+        Ayio\Auth\AuthServiceProvider::class,
         Ayio\Home\HomeServiceProvider::class,
+        Ayio\Ui\UiServiceProvider::class,
 
         JeroenG\Packager\PackagerServiceProvider::class,
 
@@ -229,6 +232,7 @@ return [
         'Session' => Illuminate\Support\Facades\Session::class,
         'Storage' => Illuminate\Support\Facades\Storage::class,
         'URL' => Illuminate\Support\Facades\URL::class,
+        'Uuid' => Webpatser\Uuid\Uuid::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 

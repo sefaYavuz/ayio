@@ -1,0 +1,108 @@
+body {
+  height: 100%;
+}
+
+.turbolinks-progress-bar {
+  height: 5px;
+  background-color: #fff;
+}
+
+.button.is-success {
+  background-color: #2EB398;
+}
+
+.nav.has-shadow {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+}
+
+.nav.is-dark {
+  background-color: #232B2D;
+  color: #F6F7F7;
+}
+.nav.is-dark .nav-item a, .nav.is-dark a.nav-item {
+    color: #F6F7F7;
+}
+.nav.is-dark .nav-item a.button.is-default {
+    color: #F6F7F7;
+    background-color: transparent;
+    border-width: 2px;
+}
+.aside {
+  background-color: #fafafa;
+  margin-right: -10px;
+}
+.aside .main {
+  padding: 40px 0;
+  color: #6F7B7E;
+}
+.aside .title {
+  color: #6F7B7E;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.aside .main .item {
+  display: block;
+  padding: 10px 40px;
+  color: #6F7B7E;
+  transition: all 300ms;
+}
+
+.aside .main .item:hover {
+    color: #00d1b2;
+}
+
+.aside .main .item.active {
+  color: #00d1b2;
+}
+
+.aside .main .icon {
+  font-size: 19px;
+  padding-right: 30px;
+}
+.aside .main .name {
+  font-size: 16px;
+  font-weight: bold;
+}
+.admin-panel {
+  padding-bottom: 0;
+}
+.content {
+  display: block;
+  background-color: #fff;
+  padding: 40px 20px;
+}
+.hero .tabs ul {
+    border-bottom: 1px solid #d3d6db;
+}
+
+.notification {
+    margin-left: -125px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    bottom: 30px;
+    -webkit-animation: fadeIn 0.5s, fadeOut 0.5s 3s forwards;
+    animation: fadeIn 0.5s, fadeOut 0.5s 3s forwards;
+}
+
+@-webkit-keyframes fadeIn {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeOut {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0; visibili}
+}

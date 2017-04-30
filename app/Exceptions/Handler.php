@@ -4,7 +4,9 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;
-use \GrahamCampbell\Exceptions\NewExceptionHandler as ExceptionHandler;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\View\View;
 
 class Handler extends ExceptionHandler
 {
@@ -44,6 +46,10 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if (view()->exists('errors::' . $exception->getStatusCode())) {
+            return response()->view('errors::' . $exception->getStatusCode(), [], $exception->getStatusCode());
+        }
+
         return parent::render($request, $exception);
     }
 
@@ -60,6 +66,6 @@ class Handler extends ExceptionHandler
             return response()->json(['error' => 'Unauthenticated.'], 401);
         }
 
-        return redirect()->guest(route('login'));
+        return redirect()->guest(route('auth.login'));
     }
 }
