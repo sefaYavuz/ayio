@@ -25,7 +25,7 @@ $menu->url = 'admin/dashboard';
 $menu->icon = 'fa fa-dashboard';
 $menu->order = 100;
 $menu->backend = 1;
-$menu->actives = json_encode(['admin/dashboard', 'admin']);
+$menu->actives = json_encode(['admin', 'admin/dashboard']);
 $menus[] = $menu->getAttributes();
 
 $menu = new Menu();
