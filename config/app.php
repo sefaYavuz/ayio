@@ -179,7 +179,6 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Ayio\Ui\UiServiceProvider::class,
-        Ayio\Home\HomeServiceProvider::class,
 
         JeroenG\Packager\PackagerServiceProvider::class,
 
