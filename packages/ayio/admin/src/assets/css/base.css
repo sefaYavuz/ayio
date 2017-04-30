@@ -69,3 +69,34 @@ body {
 .hero .tabs ul {
     border-bottom: 1px solid #d3d6db;
 }
+
+.notification {
+    margin-left: -125px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    left: 50%;
+    bottom: 30px;
+    -webkit-animation: fadeIn 0.5s, fadeOut 0.5s 3s forwards;
+    animation: fadeIn 0.5s, fadeOut 0.5s 3s forwards;
+}
+
+@-webkit-keyframes fadeIn {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeOut {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0; visibili}
+}

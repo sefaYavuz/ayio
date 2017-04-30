@@ -12,6 +12,25 @@
                 @include('admin::includes.sidebar')
             </aside>
             <div class="column is-10 admin-panel">
+                @foreach (['primary', 'info', 'success', 'warning', 'danger'] as $msg)
+                    @if(Session::has($msg))
+                        <div class="notification is-{{ $msg }} show">
+                            <button class="delete"></button>
+                            {{ Session::get($msg) }}
+
+                            <br />
+
+                            @if(Session::has('undo'))
+                                <a href="{{ Session::get('undo') }}" class="button is-inverted is-success is-small" data-method="PUT">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-undo"></i>
+                                    </span> &nbsp; Undo
+                                </a>
+                            @endif
+                        </div>
+                    @endif
+                @endforeach
+
                 @yield('content')
             </div>
         </div>
