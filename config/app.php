@@ -167,7 +167,6 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
-        GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -178,6 +177,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Ayio\Errors\ErrorsServiceProvider::class,
         Ayio\Pages\PagesServiceProvider::class,
         Ayio\Admin\AdminServiceProvider::class,
         Ayio\Auth\AuthServiceProvider::class,
