@@ -6,7 +6,7 @@ use Ayio\Pages\Models\Page;
 use Ayio\Admin\Controllers\BaseController;
 use Illuminate\Http\Request;
 
-class AdminController extends BaseController
+class BackEndController extends BaseController
 {
     /**
      * Create a new controller instance.
