@@ -27,9 +27,9 @@ class FrontEndController extends BaseController
                 ->firstOrFail();
         } catch (ModelNotFoundException $e) {
             if($url === 'admin') {
-                return redirect('admin/dashboard');
+                return view('admin::dashboard');
             }
-            
+
             abort(404);
         }
 
