@@ -4,6 +4,7 @@ namespace Ayio\Pages\Controllers;
 
 use Ayio\Pages\Models\Page;
 use Ayio\Admin\Controllers\BaseController;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class FrontEndController extends BaseController
 {
@@ -18,11 +19,20 @@ class FrontEndController extends BaseController
         $this->middleware('auth');
     }
 
-    public function showPage($url) {
-        $page = Page::where('deleted', 0)
-        ->where('disabled', 0)
-        ->where('url', $url)
-        ->first();
+    public function showPage($url = 'home') {
+        try {
+            $page = Page::where('deleted', 0)
+                ->where('disabled', 0)
+                ->where('url', $url)
+                ->firstOrFail();
+        } catch (ModelNotFoundException $e) {
+            if($url === 'admin') {
+                return redirect('admin/dashboard');
+            }
+            
+            abort(404);
+        }
+
 
         return view("pages::frontEnd.overview", [
             "page" => $page
