@@ -5,8 +5,8 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Illuminate\Http\Exceptions\HttpResponseException;
-use Illuminate\View\View;
+use Illuminate\Support\Facades\View;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Handler extends ExceptionHandler
 {
@@ -46,12 +46,41 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        if (view()->exists('errors::' . $exception->getStatusCode())) {
-            return response()->view('errors::' . $exception->getStatusCode(), [], $exception->getStatusCode());
+        if($exception instanceof NotFoundHttpException) {
+            if (View::exists('errors::' . $exception->getStatusCode())) {
+                return response()->view('errors::' . $exception->getStatusCode(), [], $exception->getStatusCode());
+            }
         }
 
         return parent::render($request, $exception);
     }
+
+    /**
+    * Create a Symfony response for the given exception.
+    *
+    * @param  \Exception  $e
+    * @return mixed
+    */
+   protected function convertExceptionToResponse(Exception $e)
+   {
+       if (config('app.debug')) {
+            $whoops = new \Whoops\Run;
+            if(request()->wantsJson()) {
+                $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler());
+            }
+            else {
+                $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            }
+
+            return response()->make(
+                $whoops->handleException($e),
+                method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500,
+                method_exists($e, 'getHeaders') ? $e->getHeaders() : []
+            );
+        }
+
+       return parent::convertExceptionToResponse($e);
+   }
 
     /**
      * Convert an authentication exception into an unauthenticated response.

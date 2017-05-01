@@ -6,11 +6,11 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "guzzlehttp/guzzle": "4.0 as 6.0",
         "jeroen-g/laravel-packager": "^1.5",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "predis/predis": "^1.0",
-        "guzzlehttp/guzzle": "4.0 as 6.0",
         "webpatser/laravel-uuid": "2.*"
     },
     "require-dev": {
@@ -49,8 +49,7 @@
             "php artisan key:generate"
         ],
         "post-install-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "php artisan optimize"
+            "Illuminate\\Foundation\\ComposerScripts::postInstall"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
