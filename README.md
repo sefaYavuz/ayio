@@ -20,13 +20,11 @@ cp env-example .env
 ```
 2. Then run your containers, you can change this according to your needs:
 ```
-docker-compose up -d nginx mysql redis beanstalkd
+docker-compose up -d nginx mysql
 ```
 3. Now open up your project's `.env` file and set the following:
 ```
 DB_HOST=mysql
-REDIS_HOST=redis
-QUEUE_HOST=beanstalkd
 ```
 4. Open your browser and go to the following url: [http://localhost](http://localhost)
 ```
