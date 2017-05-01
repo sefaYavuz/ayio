@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
     <head>
-        @include('auth::includes.head')
+        @include('auth::auth.includes.head')
     </head>
     <body>
         <div class="login-wrapper columns">
-            @include('auth::includes.header')
+            @include('auth::auth.includes.header')
 
             <div class="column is-8">
                 @yield('content')

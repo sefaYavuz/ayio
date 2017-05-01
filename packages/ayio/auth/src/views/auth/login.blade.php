@@ -1,4 +1,5 @@
-@extends('auth::layouts.default') @section('content')
+@extends('auth::auth.layouts.default')
+@section('content')
 <section class="hero is-fullheight">
     <div class="hero-heading">
         <div class="section has-text-centered">
